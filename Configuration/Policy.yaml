@@ -5,8 +5,8 @@ privilegeTargets:
 
 roles:
   'UpAssist.DocumentReader:Reader':
-    label: i18n
-    description: i18n
+    label: 'UpAssist.DocumentationReader:Main:module.label'
+    description: 'UpAssist.DocumentationReader:Main:module.description'
     privileges:
       -
         privilegeTarget: 'UpAssist.DocumentationReader:DocumentationModule'
