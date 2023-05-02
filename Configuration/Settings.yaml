@@ -1,0 +1,22 @@
+Neos:
+  Neos:
+    modules:
+      'management':
+        submodules:
+          'documentationModule':
+            label: 'UpAssist.DocumentationReader:Main:module.label'
+            controller: 'UpAssist\DocumentationReader\Controller\Backend\Module\DocumentationReaderController'
+            description: 'UpAssist.DocumentationReader:Main:module.description'
+            icon: 'fas fa-book'
+            additionalResources:
+              styleSheets:
+                - 'resource://UpAssist.DocumentationReader/Public/css/module.css'
+    userInterface:
+      translation:
+        autoInclude:
+          UpAssist.DocumentationReader:
+            - 'Main'
+UpAssist:
+  DocumentationReader:
+    # The url to your documentation
+    documentationUrl: ''

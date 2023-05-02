@@ -1,0 +1,4 @@
+include: resource://Neos.Fusion/Private/Fusion/Root.fusion
+
+# include all files in here
+include: **/*.fusion

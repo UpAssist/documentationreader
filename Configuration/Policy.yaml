@@ -1,0 +1,18 @@
+privilegeTargets:
+  'Neos\Neos\Security\Authorization\Privilege\ModulePrivilege':
+    'UpAssist.DocumentationReader:DocumentationModule':
+      matcher: 'management/documentationModule'
+
+roles:
+  'UpAssist.DocumentReader:Reader':
+    label: i18n
+    description: i18n
+    privileges:
+      -
+        privilegeTarget: 'UpAssist.DocumentationReader:DocumentationModule'
+        permission: GRANT
+  'Neos.Neos:Administrator':
+    privileges:
+      -
+        privilegeTarget: 'UpAssist.DocumentationReader:DocumentationModule'
+        permission: GRANT

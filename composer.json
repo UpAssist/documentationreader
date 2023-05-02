@@ -1,0 +1,20 @@
+{
+    "description": "A documentation reader module for Neos",
+    "type": "neos-package",
+    "name": "upassist/documentationreader",
+    "require": {
+        "neos/flow": "*",
+        "neos/fusion": "*",
+        "neos/fusion-afx": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "UpAssist\\DocumentationReader\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "UpAssist.DocumentationReader"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="" product-name="UpAssist.DocumentationReader" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="module.label">
+        <source>Documentation</source>
+      </trans-unit>
+      <trans-unit id="module.description">
+        <source>Documentation module. Enter to view documentation for your website.</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

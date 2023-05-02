@@ -1,0 +1,7 @@
+.neos-module {
+	height: 100vh;
+}
+
+.neos-module-wrap {
+	height: calc(100% - 183px);
+}
