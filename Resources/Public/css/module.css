@@ -61,7 +61,10 @@ Should probably be done nicer...
 
 .tab + label {
 	cursor: pointer;
-	display: inline-block;
+	display: -webkit-inline-box;
+	display: inline-flex;
+	-webkit-box-align: center;
+	        align-items: center;
 	text-decoration: none;
 	color: whitesmoke;
 	-webkit-box-flex: 0;
@@ -79,6 +82,16 @@ Should probably be done nicer...
 	padding: 15px;
 	margin-bottom: 0;
 }
+.tab + label > a {
+	margin-left: 1rem;
+	opacity: 0.25;
+	-webkit-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+.tab + label > a:hover {
+		opacity: 0.8;
+		color: #00b5ff !important;
+	}
 
 .tab__content {
 	padding: 10px 25px;
