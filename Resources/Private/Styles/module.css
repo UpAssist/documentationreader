@@ -12,10 +12,7 @@ Should probably be done nicer...
 */
 
 .tab-wrap {
-	-webkit-transition: 0.3s -webkit-box-shadow ease;
-	transition: 0.3s -webkit-box-shadow ease;
 	transition: 0.3s box-shadow ease;
-	transition: 0.3s box-shadow ease, 0.3s -webkit-box-shadow ease;
 	flex-wrap: wrap;
 	position: relative;
 	list-style: none;
@@ -34,16 +31,11 @@ Should probably be done nicer...
 .tab:checked:nth-of-type(4) ~ .tab__content:nth-of-type(4),
 .tab:checked:nth-of-type(5) ~ .tab__content:nth-of-type(5) {
 	opacity: 1;
-	-webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
-	transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
 	transition: 0.5s opacity ease-in, 0.8s transform ease;
-	transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
 	position: relative;
 	top: 0;
 	z-index: 100;
-	-webkit-transform: translateY(0px);
-	    -ms-transform: translateY(0px);
-	        transform: translateY(0px);
+	transform: translateY(0px);
 	text-shadow: 0 0 0;
 }
 
@@ -64,18 +56,12 @@ Should probably be done nicer...
 	display: inline-block;
 	text-decoration: none;
 	color: whitesmoke;
-	-webkit-box-flex: 0;
-	        flex-grow: 0;
+	flex-grow: 0;
 	text-align: center;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
-	-webkit-transition: 0.3s background-color ease;
+	user-select: none;
 	transition: 0.3s background-color ease;
 	height: 50px;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	padding: 15px;
 	margin-bottom: 0;
 }
@@ -89,8 +75,6 @@ Should probably be done nicer...
 	z-index: -1;
 	opacity: 0;
 	left: 0;
-	-webkit-transform: translateY(-3px);
-	    -ms-transform: translateY(-3px);
-	        transform: translateY(-3px);
+	transform: translateY(-3px);
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 }

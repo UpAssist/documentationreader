@@ -18,5 +18,9 @@ Neos:
             - 'Main'
 UpAssist:
   DocumentationReader:
-    # The url to your documentation
+    # The url to your documentation (deprecated)
     documentationUrl: ''
+    # The endpoints for your documentation
+#    documentationEndpoints:
+#      - label: ''
+#        url: ''

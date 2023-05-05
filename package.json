@@ -8,7 +8,9 @@
     "release:patch": "npx standard-version -t '' -r patch && git push --follow-tags",
     "release:minor": "npx standard-version -t '' -r minor && git push --follow-tags",
     "release:major": "npx standard-version -t '' -r major && git push --follow-tags",
-    "release": "yarn release:patch"
+    "release": "yarn release:patch",
+    "watch": "npx postcss ./Resources/Private/Styles/ --dir ./Resources/Public/css --watch --verbose",
+    "build": "npx postcss ./Resources/Private/Styles/ --dir ./Resources/Public/css"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/UpAssist/documentationreader/issues"
   },
-  "homepage": "https://github.com/UpAssist/documentationreader#readme"
+  "homepage": "https://github.com/UpAssist/documentationreader#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0"
+  }
 }
