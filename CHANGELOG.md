@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/UpAssist/documentationreader/compare/0.2.1...0.2.2) (2023-05-07)
+
+
+### Bug Fixes
+
+* link to full documentation is incorrect ([5a4f5fc](https://github.com/UpAssist/documentationreader/commit/5a4f5fccff49b9e5debf20529a084ad83e7e529d))
+
 ### [0.2.1](https://github.com/UpAssist/documentationreader/compare/0.2.0...0.2.1) (2023-05-07)
 
 ## [0.2.0](https://github.com/UpAssist/documentationreader/compare/0.1.1...0.2.0) (2023-05-05)
