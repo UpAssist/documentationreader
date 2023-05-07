@@ -2,6 +2,7 @@
     "description": "A documentation reader module for Neos",
     "type": "neos-package",
     "name": "upassist/documentationreader",
+    "license": "MIT",
     "require": {
         "neos/flow": "*",
         "neos/fusion": "*",

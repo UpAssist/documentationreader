@@ -10,7 +10,8 @@
     "release:major": "npx standard-version -t '' -r major && git push --follow-tags",
     "release": "yarn release:patch",
     "watch": "npx postcss ./Resources/Private/Styles/ --dir ./Resources/Public/css --watch --verbose",
-    "build": "npx postcss ./Resources/Private/Styles/ --dir ./Resources/Public/css"
+    "build": "npx postcss ./Resources/Private/Styles/ --dir ./Resources/Public/css",
+    "docs": "retype build && git add --all && git commit -m 'chore(docs): updated documentation'"
   },
   "repository": {
     "type": "git",
