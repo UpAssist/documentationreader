@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/dumentationreader">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.736793242112">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.737059228337">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -33,12 +33,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/dumentationreader/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="resources/css/retype.css?v=2.4.0.736793242112" rel="stylesheet" />
+    <link href="resources/css/retype.css?v=2.4.0.737059228337" rel="stylesheet" />
 
-    <script type="text/javascript" src="resources/js/config.js?v=2.4.0.736793242112" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="resources/js/config.js?v=2.4.0.737059228337" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="resources/js/lunr.js?v=2.4.0.736793242112" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="resources/js/prism.js?v=2.4.0.736793242112" defer></script>
+    <script id="lunr-js" type="text/javascript" src="resources/js/lunr.js?v=2.4.0.737059228337" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="resources/js/prism.js?v=2.4.0.737059228337" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -209,6 +209,14 @@
 </figure>
 </p>
 </doc-tab>
+<doc-tab id="markdown-example">
+<template #title>Markdown example</template>
+<p><figure class="content-center">
+    <img src="images/md.png" alt="Markdown file" />
+    <figcaption class="caption">Markdown file</figcaption>
+</figure>
+</p>
+</doc-tab>
 <doc-tab id="module-navigation">
 <template #title>Module navigation</template>
 <p><figure class="content-center">
@@ -225,7 +233,7 @@
     </h2>
 </doc-anchor-target>
 <p>This package gives you a backend module in Neos where you can disclose your documentation for the editors. Additionally, a button
-with an external link to the documentation is provided.</p>
+with an external link to the documentation is provided (when not linking to Markdown files directly).</p>
 <doc-anchor-target id="how-to-set-it-up">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-set-it-up">#</doc-anchor-trigger>
@@ -261,9 +269,33 @@ with an external link to the documentation is provided.</p>
         <span>What documentation is supported?</span>
     </h2>
 </doc-anchor-target>
-<p>Everything that can be visited online is possible to add since it is a simple iframe that loads the page. (Never said it was something fancy <span class="docs-emoji">&#x1F609;</span>).</p>
-<p>Personally I like using <a href="https://retype.com">Retype</a> which this documentation is using as well. The dark mode default fits really nice in Neos too giving
-your editors a nice integrated feel.</p>
+<p>Everything that can be visited online is possible.</p>
+<p>You can use tooling like <a href="https://readthedocs.org">Read the Docs</a> or
+<a href="https://retype.com">Retype</a> if you want to provide lots of contents.</p>
+<p>You can also link to standalone, unprocessed markdown files.</p>
+<p>Personally I like using <a href="https://retype.com">Retype</a> which this documentation is using as well. The dark mode default
+fits really nice in Neos too giving your editors a nice integrated feel.</p>
+<doc-anchor-target id="using-markdown-files">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#using-markdown-files">#</doc-anchor-trigger>
+        <span>Using Markdown files</span>
+    </h2>
+</doc-anchor-target>
+<p>Okay, we got you covered, say it in a small way: you can load a single markdown file.
+Just point the url to the markdown file in your application - or to an external location, for example: <code v-pre>CHANGELOG.md</code>
+or <code v-pre>https://raw.githubusercontent.com/UpAssist/documentationreader/main/Readme.md</code>.</p>
+<p>An Eel Helper is used to run the contents of the file through the <a href="https://parsedown.org">Parsedown</a> library.</p>
+<doc-anchor-target id="limitations">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#limitations">#</doc-anchor-trigger>
+        <span>Limitations</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Only one file per tab</li>
+<li>Styling is limited, but you can extend the styling by loading an additional stylesheet to the module and your styles are nested
+under <code v-pre>.neos.neos-module .markdown</code></li>
+</ul>
 <doc-anchor-target id="i-have-found-a-bug--feature-request">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#i-have-found-a-bug--feature-request">#</doc-anchor-trigger>
