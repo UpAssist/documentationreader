@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/UpAssist/documentationreader/compare/0.2.2...0.3.0) (2023-05-10)
+
+
+### Features
+
+* Markdown support ([c32f204](https://github.com/UpAssist/documentationreader/commit/c32f2042185247699ebfbeaf77ba76b83ef0d127)), closes [#1](https://github.com/UpAssist/documentationreader/issues/1)
+
 ### [0.2.2](https://github.com/UpAssist/documentationreader/compare/0.2.1...0.2.2) (2023-05-07)
 
 
