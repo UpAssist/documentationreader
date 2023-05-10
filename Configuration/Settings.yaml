@@ -16,6 +16,9 @@ Neos:
         autoInclude:
           UpAssist.DocumentationReader:
             - 'Main'
+  Fusion:
+    defaultContext:
+      Markdown: UpAssist\DocumentationReader\Eel\MarkdownHelper
 UpAssist:
   DocumentationReader:
     # The url to your documentation (deprecated)

@@ -82,12 +82,14 @@ Should probably be done nicer...
 	padding: 15px;
 	margin-bottom: 0;
 }
+
 .tab + label > a {
 	margin-left: 1rem;
 	opacity: 0.25;
 	-webkit-transition: opacity 0.3s ease;
 	transition: opacity 0.3s ease;
 }
+
 .tab + label > a:hover {
 		opacity: 0.8;
 		color: #00b5ff !important;
@@ -107,3 +109,48 @@ Should probably be done nicer...
 	        transform: translateY(-3px);
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+.neos.neos-module .local-markdown * {
+		line-height: 1.5;
+	}
+
+.neos.neos-module .local-markdown h1 {
+		font-size: 2rem;
+		line-height: 2.5;
+	}
+
+.neos.neos-module .local-markdown h2 {
+		font-size: 1.5rem;
+		line-height: 2;
+	}
+
+.neos.neos-module .local-markdown h3 {
+		font-size: 1.25rem;
+		line-height: 1.75;
+	}
+
+.neos.neos-module .local-markdown h4 {
+		font-size: 1rem;
+	}
+
+.neos.neos-module .local-markdown ul {
+		list-style: disc;
+		padding-left: 1rem;
+	}
+
+.neos.neos-module .local-markdown ol {
+		list-style: decimal;
+		padding-left: 1rem;
+	}
+
+.neos.neos-module .local-markdown li {
+		list-style: initial !important;
+	}
+
+.neos.neos-module .local-markdown a {
+		color: #00b5ff;
+	}
+
+.neos.neos-module .local-markdown a:hover {
+			text-decoration: underline;
+		}

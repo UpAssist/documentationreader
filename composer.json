@@ -6,7 +6,8 @@
     "require": {
         "neos/flow": "*",
         "neos/fusion": "*",
-        "neos/fusion-afx": "*"
+        "neos/fusion-afx": "*",
+        "erusev/parsedown": "*"
     },
     "autoload": {
         "psr-4": {

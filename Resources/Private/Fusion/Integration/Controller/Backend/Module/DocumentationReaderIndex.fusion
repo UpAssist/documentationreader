@@ -7,11 +7,14 @@ UpAssist.DocumentationReader.Backend.Module.DocumentationReaderController.index 
       <div class="tab-wrap">
         <Neos.Fusion:Loop items={props.endpoints} itemName="endpoint">
           <input type="radio" id={'tab' + iterator.index} name="tabs" class="tab" checked="checked" checked.@if={iterator.isFirst} />
-          <label for={'tab' + iterator.index}>{endpoint.label} <a href={endpoint.url} target="_blank" title="Open in a new window"><i class="fas fa-external-link-alt"></i></a></label>
+          <label for={'tab' + iterator.index}>{endpoint.label} <a href={endpoint.url} target="_blank" title="Open in a new window" @if={String.indexOf(endpoint.url, 'md', -1) == -1}><i class="fas fa-external-link-alt"></i></a></label>
         </Neos.Fusion:Loop>
         <Neos.Fusion:Loop items={props.endpoints} itemName="endpoint">
           <div id={'tab-content' + iterator.index} class="tab__content">
-            <iframe src={endpoint.url} width="100%" height="100%"></iframe>
+            <iframe src={endpoint.url} width="100%" height="100%" @if={String.indexOf(endpoint.url, 'md', -1) == -1}></iframe>
+            <div class="local-markdown" @if={String.indexOf(endpoint.url, 'md', -1) > 0}>
+              {Markdown.parse(endpoint.url)}
+            </div>
           </div>
         </Neos.Fusion:Loop>
       </div>
