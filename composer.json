@@ -17,6 +17,9 @@
     "extra": {
         "neos": {
             "package-key": "UpAssist.DocumentationReader"
-        }
+        },
+        "applied-flow-migrations": [
+            "TYPO3.Form-20160601101500"
+        ]
     }
 }
