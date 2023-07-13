@@ -1,6 +1,6 @@
 {
   "name": "upassist.documentationreader",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A documentation reader module for Neos",
   "main": "index.js",
   "scripts": {
