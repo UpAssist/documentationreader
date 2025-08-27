@@ -1,8 +1,7 @@
 privilegeTargets:
-  'Neos\Neos\Security\Authorization\Privilege\ModulePrivilege':
+  Neos\Neos\Security\Authorization\Privilege\ModulePrivilege:
     'UpAssist.DocumentationReader:DocumentationModule':
-      matcher: 'management/documentationModule'
-
+      matcher: management/documentationModule
 roles:
   'UpAssist.DocumentReader:Reader':
     label: 'UpAssist.DocumentationReader:Main:module.label'

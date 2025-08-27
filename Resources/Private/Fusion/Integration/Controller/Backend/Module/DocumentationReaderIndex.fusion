@@ -1,3 +1,4 @@
+// NOT RELEVANT 9.0 migration: Line 11: You very likely need to rewrite "VARIABLE.label" to "Neos.Node.label(VARIABLE)". We did not auto-apply this migration because we cannot be sure whether the variable is a Node.
 UpAssist.DocumentationReader.Backend.Module.DocumentationReaderController.index = Neos.Fusion:Component {
   endpoints = ${Configuration.setting('UpAssist.DocumentationReader.documentationEndpoints')}
   documentationUrl = ${Configuration.setting('UpAssist.DocumentationReader.documentationUrl')}

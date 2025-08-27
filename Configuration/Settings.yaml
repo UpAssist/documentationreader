@@ -1,11 +1,11 @@
 Neos:
   Neos:
     modules:
-      'management':
+      management:
         submodules:
-          'documentationModule':
+          documentationModule:
             label: 'UpAssist.DocumentationReader:Main:module.label'
-            controller: 'UpAssist\DocumentationReader\Controller\Backend\Module\DocumentationReaderController'
+            controller: UpAssist\DocumentationReader\Controller\Backend\Module\DocumentationReaderController
             description: 'UpAssist.DocumentationReader:Main:module.description'
             icon: 'fas fa-book'
             additionalResources:
@@ -15,15 +15,13 @@ Neos:
       translation:
         autoInclude:
           UpAssist.DocumentationReader:
-            - 'Main'
+            - Main
   Fusion:
     defaultContext:
       Markdown: UpAssist\DocumentationReader\Eel\MarkdownHelper
 UpAssist:
   DocumentationReader:
-    # The url to your documentation (deprecated)
-    # documentationUrl: ''
-    # The endpoints for your documentation
     documentationEndpoints:
-      - label: 'Neos Documentation'
+      -
+        label: 'Neos Documentation'
         url: 'https://www.neos.io/docs-and-support/editor-documentation/administration-interface.html'
