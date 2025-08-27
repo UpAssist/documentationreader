@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/UpAssist/documentationreader/compare/0.4.2...0.5.0) (2025-08-27)
+
+
+### Features
+
+* neos9 compatibility ([5eed065](https://github.com/UpAssist/documentationreader/commit/5eed06571ad84488a4f2126d5248d9ed89444703))
+
 ### [0.4.2](https://github.com/UpAssist/documentationreader/compare/0.4.0...0.4.2) (2024-10-30)
 
 ### [0.4.1](https://github.com/UpAssist/documentationreader/compare/0.4.0...0.4.1) (2024-10-30)
