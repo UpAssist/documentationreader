@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.3](https://github.com/UpAssist/documentationreader/compare/0.5.2...0.5.3) (2026-11-19)
+
+### Bug Fixes
+
+* apply the Markdown styles from `module.css` (the container now also has the `markdown` class)
+* only treat urls ending in `.md` (case-insensitive, query string and fragment ignored) as Markdown; urls that merely contain "md" are shown in an iframe again
+
 ### [0.5.2](https://github.com/UpAssist/documentationreader/compare/0.5.1...0.5.2) (2026-11-19)
 
 ### Maintenance
