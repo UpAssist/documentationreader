@@ -61,7 +61,6 @@ Should probably be done nicer...
 	text-align: center;
 	-webkit-user-select: none;
 	   -moz-user-select: none;
-	    -ms-user-select: none;
 	        user-select: none;
 	transition: 0.3s background-color ease;
 	height: 50px;
