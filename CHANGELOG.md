@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.1](https://github.com/UpAssist/documentationreader/compare/0.5.0...0.5.1) (2026-11-19)
+
+
+### Maintenance
+
+* constrain to Neos 8.3 - 9.x (tested on 8.3, 8.4, 9.0, 9.1 and 9.2) and require `neos/neos` and `erusev/parsedown ^1.8` explicitly
+
 ## [0.5.0](https://github.com/UpAssist/documentationreader/compare/0.4.2...0.5.0) (2025-08-27)
 
 
