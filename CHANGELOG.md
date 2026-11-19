@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.2](https://github.com/UpAssist/documentationreader/compare/0.5.1...0.5.2) (2026-11-19)
+
+### Maintenance
+
+* upgrade postcss build tooling to fix the open Dependabot alerts (rebuilt CSS only drops the `-ms-user-select` prefix)
+* add Dependabot (monthly, grouped), CI (`composer validate` + yarn build) and auto-merge for minor and patch updates
+
 ### [0.5.1](https://github.com/UpAssist/documentationreader/compare/0.5.0...0.5.1) (2026-11-19)
 
 
