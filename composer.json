@@ -4,10 +4,11 @@
     "name": "upassist/documentationreader",
     "license": "MIT",
     "require": {
-        "neos/flow": "*",
-        "neos/fusion": "*",
-        "neos/fusion-afx": "*",
-        "erusev/parsedown": "*"
+        "neos/neos": "^8.3 || ^9.0",
+        "neos/flow": "^8.3 || ^9.0",
+        "neos/fusion": "^8.3 || ^9.0",
+        "neos/fusion-afx": "^8.3 || ^9.0",
+        "erusev/parsedown": "^1.8"
     },
     "autoload": {
         "psr-4": {
