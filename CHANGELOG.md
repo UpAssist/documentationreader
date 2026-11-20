@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.4](https://github.com/UpAssist/documentationreader/compare/0.5.3...0.5.4) (2026-11-20)
+
+### Maintenance
+
+* bump `postcss-cli` to 12 and `postcss-nested` to 9; the PostCSS config now uses the object form because `postcss-nested` 9 is ESM-only (generated CSS is unchanged)
+
 ### [0.5.3](https://github.com/UpAssist/documentationreader/compare/0.5.2...0.5.3) (2026-11-19)
 
 ### Bug Fixes
