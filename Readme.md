@@ -8,4 +8,4 @@ A simple backend module for Neos to give editors access to documentation.
 
 | Version | Neos |
 | --- | --- |
-| 0.5.x | 8.3, 8.4, 9.0, 9.1, 9.2 |
+| 0.5.x, 0.6.x | 8.3, 8.4, 9.0, 9.1, 9.2 |

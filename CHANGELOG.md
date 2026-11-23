@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.0](https://github.com/UpAssist/documentationreader/compare/0.5.4...0.6.0) (2026-11-23)
+
+### Features
+
+* the policy role is now `UpAssist.DocumentationReader:Reader` ("Documentation reader"), matching the package key
+
+### Deprecations
+
+* `UpAssist.DocumentReader:Reader` (the old identifier, missing "ation") is kept as a deprecated role that inherits from `UpAssist.DocumentationReader:Reader`, so existing role assignments keep working. Assign the new role instead; the old one will be removed in 1.0.
+
 ### [0.5.4](https://github.com/UpAssist/documentationreader/compare/0.5.3...0.5.4) (2026-11-20)
 
 ### Maintenance
