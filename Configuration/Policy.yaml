@@ -3,13 +3,20 @@ privilegeTargets:
     'UpAssist.DocumentationReader:DocumentationModule':
       matcher: management/documentationModule
 roles:
-  'UpAssist.DocumentReader:Reader':
-    label: 'UpAssist.DocumentationReader:Main:module.label'
-    description: 'UpAssist.DocumentationReader:Main:module.description'
+  'UpAssist.DocumentationReader:Reader':
+    label: 'Documentation reader'
+    description: 'Grants access to the Documentation backend module.'
     privileges:
       -
         privilegeTarget: 'UpAssist.DocumentationReader:DocumentationModule'
         permission: GRANT
+  # Deprecated: the role identifier before 0.6.0 (typo, missing "ation").
+  # Kept so existing role assignments keep working; assign
+  # 'UpAssist.DocumentationReader:Reader' instead. Will be removed in 1.0.
+  'UpAssist.DocumentReader:Reader':
+    label: 'Documentation reader (deprecated)'
+    description: 'Deprecated, use UpAssist.DocumentationReader:Reader.'
+    parentRoles: ['UpAssist.DocumentationReader:Reader']
   'Neos.Neos:Administrator':
     privileges:
       -
