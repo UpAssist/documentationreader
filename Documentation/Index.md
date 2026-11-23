@@ -35,7 +35,7 @@ UpAssist:
       - label: 'Neos Documentation'
         url: 'https://www.neos.io/docs-and-support/editor-documentation/administration-interface.html'
 ```
-3. Lastly give your editors access to the module via the User Module from Neos, or add the following to a `Policy.yaml`:
+3. Lastly give your editors access to the module: assign the role `UpAssist.DocumentationReader:Reader` ("Documentation reader") in the Neos User Management module, or add the following to a `Policy.yaml`:
 ```yaml
 roles:
   'Neos.Neos:Editor':
